@@ -1,0 +1,25 @@
+  
+body {
+    background-color: #F0F8FF;
+}
+
+legend {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  header {
+      text-align: center;
+  }
