@@ -64,7 +64,7 @@ Button {
     text-decoration: none;
     background: #1469b9;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-block;
     border: none;
     transition: all 0.3s ease 0s;
