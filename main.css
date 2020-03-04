@@ -52,3 +52,9 @@ ul > li {
 #js-score {
    font-weight: bold;
 }
+
+.photo {
+    height: 60%;
+    width: 60%;
+    margin-bottom: 20px;
+}

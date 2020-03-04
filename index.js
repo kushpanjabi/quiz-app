@@ -21,6 +21,7 @@ function renderAQuestion() {
 
         <fieldset class="center">
             <div class="elements-in-box-adjust">
+                <img src=${currentQues.photo} alt="image of city" class="photo">
                 <legend>${currentQues.question}</legend>
             </div>
             <div class="js-options options"> </div>
