@@ -67,11 +67,15 @@ function updateOptions() {
     }
 }
 
+/* handles next question and checks if at last question, at which point it will display results page */
+
 function handleQuestions() {
     $('body').on('click','#next-ques', (event) => {
       STORE.currentQuestion === STORE.questions.length ? displayResults() : renderAQuestion();
     });
   }
+
+/* results page */
 
   function displayResults() {
       const resultHtml = $(
@@ -93,12 +97,15 @@ function handleQuestions() {
           $("main").html(resultHtml);
   }
 
+  /* restart quiz button */
+
   function restartQuiz() {
       $('body').on("click", "#restart", function(event){
           renderAQuestion();
       });
   }
   
+  /* option selecting handling and updating current question and score */
 
 function handleSelectOption() {
     $('body').on("submit", "#js-questions", function(event){
