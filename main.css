@@ -23,3 +23,32 @@ fieldset {
   header {
       text-align: center;
   }
+
+  .elements-in-box-adjust {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    display: inline;
+}
+
+ul > li {
+    margin: 2px;
+}
+
+
+.options {
+    margin: 20px;
+    text-align: center;
+}
+
+.feedback {
+    margin: 10px;
+    color: rgb(4, 23, 133);
+}
+
+#js-score {
+   font-weight: bold;
+}
