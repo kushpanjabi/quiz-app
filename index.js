@@ -60,8 +60,7 @@ function updateOptions() {
     for (let i = 0; i < currentQues.options.length; i++) {
         $('.js-options').append(`
             <input type="radio" name="options" id="option${i+1}" value="${currentQues.options[i]}" tabindex="${i+1}">
-                <label for="option${i+1}">${currentQues.options[i]}</label> <br/>
-                <span id="js-r${i+1}"></span>
+                <label for="options">${currentQues.options[i]}</label> <br/>
 
         `);
     }
@@ -71,6 +70,32 @@ function handleQuestions() {
     $('body').on('click','#next-ques', (event) => {
       STORE.currentQuestion === STORE.questions.length ? displayResults() : renderAQuestion();
     });
+  }
+
+  function displayResults() {
+      const resultHtml = $(
+          `
+        <fieldset class="center">
+          <div class="elements-in-box-adjust">
+              <legend>Your score is: ${STORE.score} / ${STORE.questions.length}</legend>
+          </div>
+          <div class="js-options options"> </div>
+          <div>
+              <button type="submit" id="restart">Restart Quiz</button>
+          </div>
+          <div class="feedback"> </div>
+        </fieldset>          
+          `)
+          STORE.currentQuestion = 0;
+          STORE.score = 0;
+
+          $("main").html(resultHtml);
+  }
+
+  function restartQuiz() {
+      $('body').on("click", "#restart", function(event){
+          renderAQuestion();
+      });
   }
   
 
@@ -105,6 +130,7 @@ function handleQuizApp() {
     startQuiz();
     handleQuestions();
     handleSelectOption();
+    restartQuiz();
 }
 
 $(handleQuizApp);

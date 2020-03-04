@@ -8,7 +8,7 @@ const STORE = {
           "Ottawa", 
           "Toronto"
         ],
-        answer: "Ottawa"
+        answer: "Ottawa",
       },
       //2
       {
