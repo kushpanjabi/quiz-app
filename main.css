@@ -58,3 +58,29 @@ ul > li {
     width: 60%;
     margin-bottom: 20px;
 }
+
+Button {
+    color: #fff !important;
+    text-decoration: none;
+    background: #1469b9;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s ease 0s;
+    }
+
+    Button:hover {
+        background: #1469b9;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    }
+
+   Button:active {
+        box-shadow: 0 3px 0 #00823F;
+        top: 3px;
+      }
+    
