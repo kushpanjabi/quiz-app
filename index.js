@@ -122,7 +122,7 @@ function handleSelectOption() {
             STORE.score++;
             $('.feedback').append(`You are correct!<br/>`);
         } else {
-            $('.feedback').append(`That's incorrect! <br/> The answer is actually "${currentQues.answer}"</br>`);
+            $('.feedback').append(`<span class="incorrect">That's incorrect!</span> <br/> The answer is actually "${currentQues.answer}"</br>`);
         }
 
         STORE.currentQuestion++;
