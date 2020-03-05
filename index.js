@@ -1,4 +1,3 @@
-
 /* when user clicks on the start quiz button */
 
 function startQuiz() {
@@ -18,7 +17,6 @@ function renderAQuestion() {
     const questionHtml = $(`
     
     <form id="js-questions" class="question-form">
-
         <fieldset class="center">
             <div class="elements-in-box-adjust">
                 <img src=${currentQues.photo} alt="image of city" class="photo">
@@ -62,7 +60,6 @@ function updateOptions() {
         $('.js-options').append(`
             <input type="radio" name="options" id="option${i+1}" value="${currentQues.options[i]}" tabindex="${i+1}">
                 <label for="options">${currentQues.options[i]}</label> <br/>
-
         `);
     }
 }
